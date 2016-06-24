@@ -267,7 +267,7 @@
 
 - Now depends on :mod:`amqp` 1.4.7.
 
-- Fixed libSystem import error on some OS X 10.11 (El Capitan) installations.
+- Fixed libSystem import error on some macOS 10.11 (El Capitan) installations.
 
     Fix contributed by Eric Wang.
 
@@ -1923,7 +1923,7 @@ SQS: Now supports long polling (Issue #176).
           as a pure-python replacement in environments where rabbitmq-c cannot
           be compiled.
 
-    .. _`py-amqp`: http://amqp.readthedocs.org/
+    .. _`py-amqp`: https://amqp.readthedocs.io/
 
     If you start using use py-amqp instead of amqplib you can enjoy many
     advantages including:

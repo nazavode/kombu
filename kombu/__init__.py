@@ -14,7 +14,7 @@ VERSION = version_info = version_info_t(4, 0, 0, 'a1', '')
 __version__ = '{0.major}.{0.minor}.{0.micro}{0.releaselevel}'.format(VERSION)
 __author__ = 'Ask Solem'
 __contact__ = 'ask@celeryproject.org'
-__homepage__ = 'http://kombu.readthedocs.org'
+__homepage__ = 'https://kombu.readthedocs.io'
 __docformat__ = 'restructuredtext en'
 
 # -eof meta-
@@ -44,14 +44,16 @@ if STATICA_HACK:  # pragma: no cover
 from types import ModuleType  # noqa
 
 all_by_module = {
-    'kombu.connection':    ['Connection', 'BrokerConnection'],
-    'kombu.entity':        ['Exchange', 'Queue', 'binding'],
-    'kombu.messaging':     ['Consumer', 'Producer'],
-    'kombu.pools':         ['connections', 'producers'],
-    'kombu.utils.url':     ['parse_url'],
-    'kombu.common':        ['eventloop', 'uuid'],
-    'kombu.serialization': ['enable_insecure_serializers',
-                            'disable_insecure_serializers'],
+    'kombu.connection': ['Connection', 'BrokerConnection'],
+    'kombu.entity': ['Exchange', 'Queue', 'binding'],
+    'kombu.messaging': ['Consumer', 'Producer'],
+    'kombu.pools': ['connections', 'producers'],
+    'kombu.utils.url': ['parse_url'],
+    'kombu.common': ['eventloop', 'uuid'],
+    'kombu.serialization': [
+        'enable_insecure_serializers',
+        'disable_insecure_serializers',
+    ],
 }
 
 object_origins = {}
